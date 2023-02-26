@@ -4,7 +4,19 @@ formDOM.addEventListener("submit" , form)
 function form() {
   event.preventDefault()
   let name = document.getElementById("task")
-  addItem(name.value)
+
+  if(name.value){
+    addItem(name.value)
+    console.log(typeof(name.value))
+  }
+  else if(name.value === " ") {
+    alert("Listeye boş eleman ekleyemezsiniz ! ")
+  }
+  else {
+    alert("Listeye boş eleman ekleyemezsiniz ! ")
+  }
+
+
 }
 
 let ulDOM = document.getElementById("list")
@@ -15,8 +27,12 @@ let addItem = (list) => {
   ulDOM.append(liDOM)
 }
 
-if(name == null ){
-  alert("Listeye boş ekleme yapamazsınız ! ")
+let deleteItem = (list) => {
+  let liDOM = document.getElementById("li")
+  liDOM.innerHTML = `${list}`
+  ulDOM.remove()(liDOM)
 }
+
+
 
 
