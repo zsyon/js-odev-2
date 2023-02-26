@@ -6,11 +6,11 @@ function form() {
   addItem(name.value)
 }
 
-let ulDOM = document.getElementById("ul")
+let ulDOM = document.getElementById("list")
 
-const addItem = (username , not) => {
+const addItem = (list) => {
   let liDOM = document.getElementById("li")
-  liDOM.innerHTML = `${username} , ${not}`
+  liDOM.innerHTML = `${list}`
   ulDOM.append(liDOM)
 }
 
