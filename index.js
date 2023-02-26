@@ -1,14 +1,15 @@
 let formDOM = document.getElementById("form")
-formDOM.addEventListener("click" , form)
+formDOM.addEventListener("submit" , form)
 
 function form() {
+  event.preventDefault()
   let name = document.getElementById("task")
   addItem(name.value)
 }
 
 let ulDOM = document.getElementById("list")
 
-const addItem = (list) => {
+let addItem = (list) => {
   let liDOM = document.getElementById("li")
   liDOM.innerHTML = `${list}`
   ulDOM.append(liDOM)
