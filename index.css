@@ -103,6 +103,10 @@ input {
   border-radius: 0;
 }
 
+#liveToastBtn {
+  border: 0px;
+}
+
 .button:hover {
   background-color: #bbb;
 }

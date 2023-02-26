@@ -15,4 +15,8 @@ let addItem = (list) => {
   ulDOM.append(liDOM)
 }
 
+if(name == null ){
+  alert("Listeye boş ekleme yapamazsınız ! ")
+}
+
 
