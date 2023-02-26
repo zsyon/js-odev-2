@@ -15,8 +15,6 @@ function form() {
   else {
     alert("Listeye boş eleman ekleyemezsiniz ! ")
   }
-
-
 }
 
 let ulDOM = document.getElementById("list")
@@ -27,11 +25,18 @@ let addItem = (list) => {
   ulDOM.append(liDOM)
 }
 
-let deleteItem = (list) => {
-  let liDOM = document.getElementById("li")
-  liDOM.innerHTML = `${list}`
-  ulDOM.remove()(liDOM)
+// create element li yap
+//Silme işleminin eklenmesi
+let pageDOM = document.getElementById("list")
+pageDOM.addEventListener("click" , fonks)
+
+let uldOM = document.getElementById("list")
+
+function fonks(){
+  let lidOM = document.getElementById("li")
+  uldOM.remove(lidOM)
 }
+
 
 
 
