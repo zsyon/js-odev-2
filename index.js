@@ -15,8 +15,3 @@ const addItem = (list) => {
 }
 
 
-
-
-
-let notDOM = document.getElementById("not")
-
