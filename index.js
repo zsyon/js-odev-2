@@ -20,12 +20,12 @@ function form() {
 let ulDOM = document.getElementById("list")
 
 let addItem = (list) => {
-  let liDOM = document.getElementById("li")
+  let liDOM = document.createElement("li")
   liDOM.innerHTML = `${list}`
   ulDOM.append(liDOM)
 }
 
-// create element li yap
+
 //Silme işleminin eklenmesi
 let pageDOM = document.getElementById("list")
 pageDOM.addEventListener("click" , fonks)
@@ -33,7 +33,7 @@ pageDOM.addEventListener("click" , fonks)
 let uldOM = document.getElementById("list")
 
 function fonks(){
-  let lidOM = document.getElementById("li")
+  let lidOM = document.getElementById("li1")
   uldOM.remove(lidOM)
 }
 
